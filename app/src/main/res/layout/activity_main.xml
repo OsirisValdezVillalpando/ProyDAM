@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ndroid="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imgInicio"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="0dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/carinicio" />
+
+        <TextView
+            android:id="@+id/txtTituloInicio"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_below="@+id/imgInicio"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="172dp"
+            android:gravity="center"
+            android:text="@string/tituloPantInicial"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/txtTituloInicio"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/txtDireccion"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTituloInicio" />
+
+        <TextView
+            android:id="@+id/txtDireccionDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/txtDireccion"
+            android:gravity="center"
+            android:text="@string/txtDireccionDescripcion"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnIrUbicacion"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDireccionDescrip"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="120dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:onClick="Ubicacion"
+            android:text="@string/btnUbicacion"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            ndroid:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/txtServicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnIrUbicacion"
+            android:layout_marginTop="60dp"
+            android:text="@string/txtServicios"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRentarAuto"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtServicios"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:onClick="RentarAutoActivity"
+            android:text="@string/btnrRentarAuto"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            ndroid:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnAgendarViaje"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRentarAuto"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:text="@string/btnAgendarViaje"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:onClick="AgendarViajeActivity"
+            ndroid:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/txtNoTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAgendarViaje"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/NoTelefonoWhatsApp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLlamarPagPrincipal"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNoTelefono"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#65FF3B"
+            android:gravity="center"
+            android:onClick="Llamar"
+            android:text="@string/Llamar"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            ndroid:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txtAgendarViajeTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:text="@string/txtTituloAgendarViaje"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtpNombreApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAgendarViajeTitulo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/hintNombreApellido"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtpNoTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpNombreApellido"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/hintNoTelefono"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtpFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpNoTelefono"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/hintFecha"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpFecha"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:text="@string/btnElegirFecha"
+            android:textStyle="bold"
+            android:onClick="showDatePicker"
+            tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <EditText
+            android:id="@+id/txtpHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnFecha"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/hintHora"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpHora"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:onClick="showTimePickerDialog"
+            android:text="@string/btnHora"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <EditText
+            android:id="@+id/txtpDondeRecogerlo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnHora"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/hintDondeRecogerlo"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtpDescripcionViaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpDondeRecogerlo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/hintDescripcionViaje"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnEnviarAgendarViaje"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpDescripcionViaje"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="130dp"
+            android:backgroundTint="#65FF3B"
+            android:text="@string/btnEnviar"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize"
+            android:onClick="EnviarAgendarViaje"/>
+
+        <Button
+            android:id="@+id/btnVerAgendada"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnEnviarAgendarViaje"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="130dp"
+            android:backgroundTint="#FFE500"
+            android:onClick="MostrarAgenda"
+            android:text="@string/btnVerAgenda"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize" />
+
+
+    </RelativeLayout>
+</ScrollView>

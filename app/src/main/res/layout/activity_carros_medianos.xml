@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txtRentarAutoTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:text="@string/txtTituloRentarAuto"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTiuloCarrosMedianos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRentarAutoTitulo"
+            android:background="#F80000"
+            android:gravity="center"
+            android:text="@string/txtTituloCarrosMedianos"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgCarrosMedianos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTiuloCarrosMedianos"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/corolla" />
+
+        <TextView
+            android:id="@+id/txtMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCarrosMedianos"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="222dp"
+            android:text="marca"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMarca"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="222dp"
+            android:text="modelo"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtAño"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtModelo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="222dp"
+            android:text="2020"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTransmision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAño"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="222dp"
+            android:text="transmision"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtNoPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTransmision"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="222dp"
+            android:text="8 Personas"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtNoPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_below="@+id/txtNoPersonas"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="194dp"
+            android:text="$1300 cada 24 Hrs"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNoPrecio"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:onClick="Siguiente"
+            android:text="@string/btnSiguiente"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSiguiente"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:onClick="Anterior"
+            android:text="@string/btnAnterior"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <EditText
+            android:id="@+id/txtpNombreApellidoRentarAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAnterior"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="@string/hintNombreRentarAuto"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtpNoTelCamionetasVans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpNombreApellidoRentarAuto"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="@string/hintNoTelefono"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txtpFechaDeRenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpNoTelCamionetasVans"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/hintFechaDeRenta"
+            android:inputType="date"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnFechaRenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpFechaDeRenta"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:text="@string/btnElegirFecha"
+            android:textStyle="bold"
+            android:onClick="showDatePicker4"
+            tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <EditText
+            android:id="@+id/txtpHoraRenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnFechaRenta"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/hintHoraRenta"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnHoraRenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpHoraRenta"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:onClick="showTimePickerDialog4"
+            android:text="@string/btnHora"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+
+        <EditText
+            android:id="@+id/txtpFechaEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnHoraRenta"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/hintFechaDeEntrega"
+            android:inputType="date"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnFechaEntrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpFechaEntrega"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:text="@string/btnElegirFecha"
+            android:textStyle="bold"
+            android:onClick="showDatePicker5"
+            tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <EditText
+            android:id="@+id/txtpHoraEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnFechaEntrega"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/hintHoraEntrega"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnHoraEntrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpHoraEntrega"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:onClick="showTimePickerDialog5"
+            android:text="@string/btnHora"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnEnviarRenta"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnHoraEntrega"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="130dp"
+            android:backgroundTint="#65FF3B"
+            android:text="@string/btnEnviar"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize"
+            android:onClick="EnviarRenta"/>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

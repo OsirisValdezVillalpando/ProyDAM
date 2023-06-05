@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txtRentarAutoTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:text="@string/txtTituloRentarAuto"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgCarroMediano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRentarAutoTitulo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/carrosmedianos4" />
+
+        <Button
+            android:id="@+id/btnCarrosMedianos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCarroMediano"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="#F80000"
+            android:text="@string/btnCarrosMedianos"
+            android:onClick="CarrosMedianosActivity"/>
+
+        <ImageView
+            android:id="@+id/imgCarrosMedianos"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCarrosMedianos"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/camionetasvans2" />
+
+        <Button
+            android:id="@+id/btnCamionetasVans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCarrosMedianos"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="#F80000"
+            android:text="@string/btnCamionetasVans"
+            android:onClick="CamionetasVansActivity"/>
+
+
+    </RelativeLayout>
+</ScrollView>

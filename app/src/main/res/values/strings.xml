@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Taxi y Renta de autos "EL PATULA"</string>
+    <string name="tituloPantInicial">Taxi y Renta de autos\n"EL PATULA"</string>
+    <string name="btnrRentarAuto">Rentar Auto</string>
+    <string name="btnAgendarViaje">Agendar Viaje</string>
+    <string name="txtDireccion">Carretera Federal #54 Apozol, Zacatecas</string>
+    <string name="txtDireccionDescripcion">A un costado del puente de Apozol y del monumento del Águila</string>
+    <string name="txtServicios">Servicios:</string>
+    <string name="NoTelefonoWhatsApp">Teléfono y WhatsApp\nContáctanos:\n\n467 105 84 81</string>
+    <string name="Llamar">¡ LLAMAR !</string>
+    <string name="btnUbicacion">Ubicación</string>
+    <string name="txtTituloAgendarViaje">Agendar Viaje</string>
+    <string name="hintNombreApellido">Nombre y Apellido</string>
+    <string name="hintNoTelefono">Número de Teléfono</string>
+    <string name="hintFecha">Fecha</string>
+    <string name="btnElegirFecha">Elegir Fecha</string>
+    <string name="hintDondeRecogerlo">¿ Dónde Recogerlo ? (Dirección, Referencias)</string>
+    <string name="hintHora">Hora (Formato 24 horas 00:00 - 23:59)</string>
+    <string name="hintDescripcionViaje">Describa cómo sería su viaje</string>
+    <string name="btnEnviar">ENVIAR</string>
+    <string name="txtTituloRentarAuto">Rentar Auto</string>
+    <string name="btnCarrosMedianos">Carros Medianos</string>
+    <string name="btnCamionetasVans">Camionetas y Vans</string>
+    <string name="title_activity_carros_medianos">CarrosMedianosActivity</string>
+    <string name="txtTituloCarrosMedianos">CARROS MEDIANOS</string>
+    <string name="txtTituloCamionetasVans">CAMIONETAS Y VANS</string>
+    <string name="hintFechaDeRenta">Fecha de Renta</string>
+    <string name="hintFechaDeEntrega">Fecha de Entrega</string>
+    <string name="hintNombreRentarAuto">Nombre y Apellido</string>
+    <string name="btnHora">Elegir Hora</string>
+    <string name="hintHoraRenta">Hora de renta (Formato 24 horas 00:00 - 23:59)</string>
+    <string name="hintHoraEntrega">Hora de entrega (Formato 24 horas 00:00 - 23:59)</string>
+    <string name="btnSiguiente"><![CDATA[Siguiente ⋙⫸]]></string>
+    <string name="btnAnterior"><![CDATA[⫷⋘ Anterior]]></string>
+    <string name="btnVerAgenda">Ver Agenda</string>
+
+</resources>
